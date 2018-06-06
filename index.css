@@ -30,10 +30,13 @@ form{
 #spellList{
     position: relative;
     margin-left: 60vw;
-    margin-top: 30vh;
+    margin-top: 10vh;
 }
 #typeList{
-    position: relative;
-    margin-left: 30vw;
-    margin-top: 25vh; 
+    font: bold;
+    color: red;
+    text-transform: capitalize;
+    text-decoration: underline black;
+
+
 }

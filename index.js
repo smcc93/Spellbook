@@ -12,8 +12,9 @@ function add(ev){
 
     const dvtypeList = document.querySelector('#typeList');
     const typeList = document.createElement('li');
+    
+    typeList.appendChild(document.createTextNode(addType));
     spellList.appendChild(document.createTextNode(addSpell));
-    spellList.appendChild(document.createTextNode(addType));
     dvList.appendChild(spellList);
     dvtypeList.appendChild(typeList);
     newSpell.reset();
