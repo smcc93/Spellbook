@@ -1,52 +1,39 @@
 h1 {
-    background-color:blue;
+    
     border: solid;
-    border-width: 10px;
+    border-width: 5px;
     width: 150px;
-    border-color: darkblue;
     padding: 5px;
     margin: 10px;
     position: relative;
-    margin-left: 50%;
+    margin-left: 25vw;
+    margin-top: 10vh;
 }
 
-h2{
-    background-color: red;
-    border: solid;
-    border-width: 10px;
-    width: 150px;
-    border-color: firebrick;
-    padding: 5px;
-    margin: 10px;
-    position: relative;
-    margin-left: 50%;
-}
-h3{
-    background-color: lightgreen;
-    border: solid;
-    border-width: 10px;
-    width: 150px;
-    border-color: green;
-    padding: 5px;
-    margin: 10px;
-    position: relative;
-    margin-left: 50%;
-}
 body{
-    background-color:gray;
+     background-image: url(spellbook.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        padding: 0;
+        margin: 0;
 }
+    
 form{
-    background-color: darkorange;
-    border: solid;
-    border-width: 10px;
     width: 160px;
-    border-color:goldenrod;
     padding: 5px;
     margin: 10px;
-    position: relative;
-    margin-left: 50%;
+    position: absolute;
+    margin-left: 25vw;
+    margin-top: 30vh;
 }
-button{
+#spellList{
     position: relative;
-    margin-left: 50%;
+    margin-left: 60vw;
+    margin-top: 30vh;
+}
+#typeList{
+    position: relative;
+    margin-left: 30vw;
+    margin-top: 25vh; 
 }

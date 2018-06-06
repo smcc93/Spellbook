@@ -10,18 +10,23 @@
     
 </head>
 <body>
+    
     <h1>Spellbook</h1>
-    <h2>Spell School</h2>
-    <h3>Spell Name</h3>
+
     <form>
-        Spell School: <br>
-        <input type="text" name="School" id="school"><br>
-        Spell name: <br>
-        <input type="text" name="Spell" id="spell"><br>
-        <button type="submit">Change text</button>
-
-
+        Spell Name: <br>
+        <input type="text" name="spellName" id="spell"><br>
+        Spell Type: <br>
+        <input type="text" name="spellType" id="spellType"><br>
+        <button type="submit">Add</button>
     </form>
+    
+    <main>
+        <ul id="spellList"></ul> 
+    </main>
+    <main>
+        <ul id="typeList"></ul>
+    </main>
     <script src="index.js"></script>
 </body>
 </html>
