@@ -27,7 +27,7 @@ form{
     margin-left: 25vw;
     margin-top: 15vh;
 }
-.spellName{
+.name{
     text-transform: capitalize;
     font-family: 'Nanum Brush Script', cursive;
     font-size: 30px;

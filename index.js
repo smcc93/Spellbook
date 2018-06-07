@@ -49,7 +49,8 @@ const book = {
       spellList.appendChild(delButton);
       delButton.addEventListener('click', (ev) =>{
         ev.preventDefault();
-        this.removeSpell;
+        delButton.parentNode.remove();
+        book.spellArr.splice(book.spellArr.indexOf(delButton.parentNode),1);
       })
 
       return spellList 
@@ -79,7 +80,6 @@ const book = {
     }, 
    spellArr:  [],
 
-   removeSpell: function()
 }
 
 book.init()
