@@ -33,14 +33,25 @@ const book = {
       const childElements = properties.map((prop) => { 
     
       return this.renderProperty(prop, spell[prop]) 
+      
     
      }) 
+     
 
      const spellList= document.createElement('li');
      childElements.forEach(function(el) { 
+      
 
        spellList.appendChild(el) 
       })
+      const delButton = document.createElement('button');
+      delButton.innerHTML += 'Delete';
+      spellList.appendChild(delButton);
+      delButton.addEventListener('click', (ev) =>{
+        ev.preventDefault();
+        this.removeSpell;
+      })
+
       return spellList 
     },     
     handleSubmit: function(ev) { 
@@ -59,20 +70,16 @@ const book = {
     
      list.appendChild(item) 
 
-     const spellArr = [];
+     
 
-     spellArr.push(f.spellName.value);
-     console.log(spellArr);
-
-     const delButton = document.createElement('button');
-
-     const delRef = document.querySelector('#delSpell');
-     delRef.innerHTML = 'Delete';
-     delRef.appendChild(delButton);
+     this.spellArr.push(spell);
+     console.log(this.spellArr);
 
      f.reset() 
     }, 
-    
+   spellArr:  [],
+
+   removeSpell: function()
 }
 
 book.init()
