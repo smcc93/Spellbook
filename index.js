@@ -41,7 +41,7 @@ const book = {
 
        spellList.appendChild(el) 
       })
-      return item 
+      return spellList 
     },     
     handleSubmit: function(ev) { 
 
@@ -61,12 +61,13 @@ const book = {
 
      const spellArr = [];
 
-     spellArr.push(spellName.value);
+     spellArr.push(f.spellName.value);
+     console.log(spellArr);
 
      const delButton = document.createElement('button');
 
      const delRef = document.querySelector('#delSpell');
-
+     delRef.innerHTML = 'Delete';
      delRef.appendChild(delButton);
 
      f.reset() 

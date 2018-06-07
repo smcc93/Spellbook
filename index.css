@@ -27,11 +27,12 @@ form{
     margin-left: 25vw;
     margin-top: 15vh;
 }
-#spellName{
+.spellName{
+    text-transform: capitalize;
     font-family: 'Nanum Brush Script', cursive;
     font-size: 30px;
 }
-#spellType{
+.spellType{
     font: bold;
     color: red;
     text-transform: capitalize;
@@ -42,4 +43,9 @@ form{
 #spellList{
     margin-left: 60vw;
     margin-top: 10vh;
+    justify-content: space-evenly;
+}
+#delSpell{
+    margin-left: 70vw;
+    margin-top: 10vw;
 }
