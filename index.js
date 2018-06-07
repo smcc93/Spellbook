@@ -63,9 +63,11 @@ const book = {
 
      spellArr.push(spellName.value);
 
-     const typeArr = [];
+     const delButton = document.createElement('button');
 
-     typeArr.push(spellType.value);
+     const delRef = document.querySelector('#delSpell');
+
+     delRef.appendChild(delButton);
 
      f.reset() 
     }, 
