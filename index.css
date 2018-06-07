@@ -28,9 +28,6 @@ form{
     margin-top: 15vh;
 }
 #spellName{
-    position: relative;
-    margin-left: 60vw;
-    margin-top: 10vh;
     font-family: 'Nanum Brush Script', cursive;
     font-size: 30px;
 }
@@ -41,4 +38,8 @@ form{
     text-decoration: underline black;
     font-family: 'Nanum Brush Script', cursive;
     font-size: 30px;
+}
+#spellList{
+    margin-left: 60vw;
+    margin-top: 10vh;
 }

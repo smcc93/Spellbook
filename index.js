@@ -59,11 +59,19 @@ const book = {
     
      list.appendChild(item) 
 
+     const spellArr = [];
+
+     spellArr.push(spellName.value);
+
+     const typeArr = [];
+
+     typeArr.push(spellType.value);
+
      f.reset() 
     }, 
     
 }
 
-
+book.init()
 
  
