@@ -27,20 +27,18 @@ form{
     margin-left: 25vw;
     margin-top: 15vh;
 }
-#spellList{
+#spellName{
     position: relative;
     margin-left: 60vw;
     margin-top: 10vh;
     font-family: 'Nanum Brush Script', cursive;
     font-size: 30px;
 }
-#typeList{
+#spellType{
     font: bold;
     color: red;
     text-transform: capitalize;
     text-decoration: underline black;
     font-family: 'Nanum Brush Script', cursive;
     font-size: 30px;
-
-
 }
