@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
     <link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
 </head>
@@ -14,16 +15,44 @@
     <h1>Spellbook</h1>
 
     <form>
-        Spell Name: <br>
-        <input type="text" name="spellName"><br>
-        Spell Type: <br>
-        <input type="text" name="spellType"><br>
+        
+        <input type="text" name="spellName" placeholder="Enter Spell" autofocus><br>
+    
+        <input type="text" name="spellType" placeholder="Enter Spell Type"><br>
         <button type="submit">Add</button>
     </form>
     
     <main>
-        <ul id="spellList"></ul> 
+        <ul id="spellList">
+            <li class="spell template">
+                <span class="name"></span>    
+                <span class="level"></span>
+                <button class="delete">del</button>
+                <button class="fav">fav</button>
+            </li>
+        </ul> 
     </main>
+    <li class="spell template">
+        <span class="name"></span>
+        <span class="level"></span>
+    
+        <button class="delete">   
+            <i class="far fa-trash-alt" title="remove"></i>
+        </button>
+    
+        <button class="move up">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    
+        <button class="move down">
+            <i class="fas fa-arrow-down"></i>
+        </button>
+    
+        <button class="fav">
+            <i class="fas fa-star" title="favorite"></i>
+        </button>
+    
+      </li>
     <script src="index.js"></script>
 </body>
 </html>

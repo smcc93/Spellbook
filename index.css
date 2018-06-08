@@ -45,7 +45,29 @@ form{
     margin-top: 10vh;
     justify-content: space-evenly;
 }
-#delSpell{
-    margin-left: 70vw;
-    margin-top: 10vw;
+button.delete{
+    background-color: black;
+    color: red;
 }
+button.delete {
+    background-color: black;
+    color: white;
+  }
+  
+  button.fav {
+    background-color: yellow;
+    color: black;
+  }
+  
+  button.move {
+    background-color: grey;
+    color:black;
+  }
+
+  .spell.fav {
+    background-color: lightgreen;  
+  }
+
+  .template {
+    display: none;
+  }
