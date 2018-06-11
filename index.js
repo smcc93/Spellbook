@@ -39,7 +39,7 @@ class book {
   renderItem(spell) { 
     const item = this.template.cloneNode(true)
 
-    item.classList.remove('template')
+    item.classList.remove('template');
     
     const properties = Object.keys(spell) 
     properties.forEach(property => {
@@ -50,10 +50,10 @@ class book {
         el.setAttribute('title', spell[property])
       }
 
-    })
+     })
     if (spell.favorite) {
       item.classList.add('fav')
-    }
+     } 
     item.querySelector('button.delete').addEventListener('click', this.removeSpell.bind(this, spell))
     item.querySelector('button.fav').addEventListener('click', this.toggleFavorite.bind(this, spell))
     item.querySelector('button.up').addEventListener('click', this.moveUp.bind(this, spell))
@@ -72,9 +72,9 @@ moveDown(spell, ev) {
     const nextSpell = this.spellArr[i + 1]
     this.spellArr[i + 1] = spell
     this.spellArr[i] = nextSpell
-
-    this.save()
   }
+    this.save()
+  
 }
 
 moveUp(spell, ev) {
@@ -87,9 +87,9 @@ moveUp(spell, ev) {
     const previousSpell = this.spellArr[i - 1]
     this.spellArr[i - 1] = spell
     this.spellArr[i] = previousSpell
-
+  }
     this.save()
-    }
+    
   }
 
   toggleFavorite(spell, ev) {
@@ -121,6 +121,7 @@ moveUp(spell, ev) {
       
     handleSubmit(ev) { 
 
+      ev.preventDefault();
      const f = ev.target     
      const spell = { 
     

@@ -44,6 +44,7 @@ form{
     margin-left: 60vw;
     margin-top: 10vh;
     justify-content: space-evenly;
+    display: flex;
 }
 button.delete{
     background-color: black;
